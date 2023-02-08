@@ -8,6 +8,45 @@
     <title>Basic Contact Form | Built with HTML, CSS and JS</title>
   </head>
   <body>
-    <script src="app.js" type="module"></script>
+    <div class="container">
+      <form class="form-contact" action="#">
+        <h3>Get in touch</h3>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="text"
+          id="phone"
+          placeholder="Your Phone Number"
+          required />
+        <input type="text" id="subject" placeholder="Subject" />
+        <textarea
+          id="body"
+          rows="4"
+          placeholder="How can we help you?"></textarea>
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./app.js" type="module"></script>
+    <!-- <script>
+      function sendEmail() {
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+        const subject = document.getElementById("subject");
+        const body = document.getElementById("body");
+
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "mgriffes@gmail.com",
+          Password: "97A8BC3C5171560F9583D4AE3DC5FA9EBA42",
+          To: "mgriffes@gmail.com",
+          From: email.value,
+          Subject: subject.value,
+          Body: body.value,
+        }).then((message) => alert("Your message was sent successfully!"));
+      }
+    </script> -->
   </body>
 </html>
