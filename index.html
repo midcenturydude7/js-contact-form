@@ -9,24 +9,39 @@
   </head>
   <body>
     <div class="container">
-      <form class="form-contact" action="#">
+      <form
+        class="form-contact"
+        action="https://formsubmit.co/mgriffes@gmail.com"
+        method="POST">
         <h3>Get in touch</h3>
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required />
         <input
           type="text"
           id="phone"
+          name="phone"
           placeholder="Your Phone Number"
           required />
         <input type="text" id="subject" placeholder="Subject" />
         <textarea
           id="body"
+          name="message"
           rows="4"
           placeholder="How can we help you?"></textarea>
         <button type="submit" id="send-btn">Send</button>
       </form>
     </div>
   </body>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="./app.js" type="module"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./app.js" type="module"></script> -->
 </html>
